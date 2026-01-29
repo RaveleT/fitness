@@ -865,42 +865,70 @@ elif menu == "STEM Data Explorer":
 elif menu == "Fitness Tracker":
     st.title("🏋️‍♂️ Fitness Analytics")
     
-    # Check for upload, otherwise use default
+    # --- Data Loading ---
     uploaded_file = st.sidebar.file_uploader("Upload workout_data.json", type=['json'])
     if uploaded_file:
         data = json.load(uploaded_file)
     else:
+        # This will now use your real 2025/2026 data
         data = DEFAULT_WORKOUT_JSON
     
     df = process_workout_data(data)
 
-    # Key Metrics
+    # --- Sidebar Filters ---
+    st.sidebar.divider()
+    st.sidebar.subheader("Filter Dashboard")
+    
+    # This filter ensures you can toggle between 2025 and 2026
+    available_years = sorted(df['Date'].dt.year.unique(), reverse=True)
+    selected_year = st.sidebar.selectbox("Select Year", available_years)
+    
+    # Filter the dataframe for the rest of the page
+    df_filtered = df[df['Date'].dt.year == selected_year]
+
+    # --- Top Level Metrics ---
     m1, m2, m3 = st.columns(3)
-    m1.metric("Total Volume", f"{df['Volume'].sum():,.0f} kg")
-    m2.metric("Total Sets", len(df))
-    m3.metric("Workouts", df['Date'].nunique())
+    m1.metric(f"Total Volume ({selected_year})", f"{df_filtered['Volume'].sum():,.0f} kg")
+    m2.metric("Exercises Logged", len(df_filtered))
+    m3.metric("Training Sessions", df_filtered['Date'].nunique())
 
     st.divider()
 
-    # Visuals
+    # --- Visualizations ---
     col_left, col_right = st.columns(2)
     
     with col_left:
         st.subheader("Volume by Muscle Group")
+        # Horizontal bar chart showing where you're putting in the work
         fig, ax = plt.subplots()
-        df.groupby('Category')['Volume'].sum().sort_values().plot(kind='barh', ax=ax, color='skyblue')
+        df_filtered.groupby('Category')['Volume'].sum().sort_values().plot(kind='barh', ax=ax, color='#1f77b4')
+        plt.xlabel("Total Weight (kg)")
         st.pyplot(fig)
 
     with col_right:
-        st.subheader("Daily Intensity Heatmap")
-        pivot = df.pivot_table(index='Category', columns=df['Date'].dt.strftime('%m-%d'), values='Volume', aggfunc='sum').fillna(0)
+        st.subheader("Daily Training Load")
+        # Heatmap using specific dates to keep 2025/2026 separate
+        pivot = df_filtered.pivot_table(
+            index='Category', 
+            columns=df_filtered['Date'].dt.strftime('%m-%d'), 
+            values='Volume', 
+            aggfunc='sum'
+        ).fillna(0)
+        
         fig2, ax2 = plt.subplots()
-        sns.heatmap(pivot, annot=True, fmt=".0f", cmap="YlGnBu", ax=ax2)
+        sns.heatmap(pivot, annot=False, cmap="YlGnBu", ax=ax2)
         st.pyplot(fig2)
+
+    # --- Progress Over Time (The "January View") ---
+    st.subheader("All-Time Volume Trend")
+    # This chart is not filtered by year, so you can see the jump from 2025 to 2026
+    trend_data = df.groupby('Date')['Volume'].sum().reset_index()
+    st.line_chart(trend_data.set_index('Date'))
 
 elif menu == "Contact":
     st.header("Contact")
     st.write("Email: jane.doe@science.edu")
+
 
 
 
