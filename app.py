@@ -5,6 +5,7 @@ import json
 import seaborn as sns
 import matplotlib.pyplot as plt
 import warnings
+import re
 
 null = None
 
@@ -929,6 +930,7 @@ elif menu == "Contact":
     st.header("Contact")
     st.write("Email: ravele95@gmail.com")
     st.write("Contact No: 060 924 9459")
+
 
 
 
