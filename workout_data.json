@@ -1,0 +1,771 @@
+[
+    {
+        "date": "2025-12-15",
+        "exercises": [
+            {
+                "name": "Barbell Bench Press",
+                "sets": [
+                    {
+                        "set": 1,
+                        "reps": 10
+                    },
+                    {
+                        "set": 2,
+                        "reps": 10
+                    },
+                    {
+                        "set": 3,
+                        "reps": 10
+                    }
+                ],
+                "weight": "30"
+            },
+            {
+                "name": "Push Ups",
+                "sets": [
+                    {
+                        "set": 1,
+                        "reps": 15
+                    },
+                    {
+                        "set": 2,
+                        "reps": 15
+                    },
+                    {
+                        "set": 3,
+                        "reps": 15
+                    }
+                ],
+                "weight": null
+            },
+            {
+                "name": "Dumbbell Overhead Press",
+                "sets": [
+                    {
+                        "set": 1,
+                        "reps": 1
+                    },
+                    {
+                        "set": 2,
+                        "reps": 10
+                    },
+                    {
+                        "set": 3,
+                        "reps": 10
+                    }
+                ],
+                "weight": "20"
+            },
+            {
+                "name": "Dynamique Crunch",
+                "sets": [
+                    {
+                        "set": 1,
+                        "reps": 15
+                    },
+                    {
+                        "set": 2,
+                        "reps": 20
+                    },
+                    {
+                        "set": 3,
+                        "reps": 20
+                    }
+                ],
+                "weight": null
+            },
+            {
+                "name": "Dumbbell Triceps Kickbacks",
+                "sets": [
+                    {
+                        "set": 1,
+                        "reps": 15
+                    },
+                    {
+                        "set": 2,
+                        "reps": 15
+                    },
+                    {
+                        "set": 3,
+                        "reps": 15
+                    }
+                ],
+                "weight": "9.5"
+            },
+            {
+                "name": "Ab Wheel Rollout",
+                "sets": [
+                    {
+                        "set": 1,
+                        "reps": 5
+                    },
+                    {
+                        "set": 2,
+                        "reps": 10
+                    },
+                    {
+                        "set": 3,
+                        "reps": 10
+                    }
+                ],
+                "weight": null
+            },
+            {
+                "name": "Kettlebell Goblet Squat",
+                "sets": [
+                    {
+                        "set": 1,
+                        "reps": 15
+                    },
+                    {
+                        "set": 2,
+                        "reps": 15
+                    },
+                    {
+                        "set": 3,
+                        "reps": 15
+                    }
+                ],
+                "weight": "10"
+            },
+            {
+                "name": "Dumbbell Lateral Raise",
+                "sets": [
+                    {
+                        "set": 1,
+                        "reps": 12
+                    },
+                    {
+                        "set": 2,
+                        "reps": 12
+                    },
+                    {
+                        "set": 3,
+                        "reps": 12
+                    },
+                    {
+                        "set": 3,
+                        "reps": 12
+                    }
+                ],
+                "weight": "9.5"
+            },
+            {
+                "name": "Kettlebell Overhead Triceps Extension",
+                "sets": [
+                    {
+                        "set": 1,
+                        "reps": 12
+                    },
+                    {
+                        "set": 2,
+                        "reps": 12
+                    },
+                    {
+                        "set": 3,
+                        "reps": 12
+                    },
+                    {
+                        "set": 3,
+                        "reps": 12
+                    }
+                ],
+                "weight": "10"
+            },
+            {
+                "name": "Rotating Biceps Curl",
+                "sets": [
+                    {
+                        "set": 1,
+                        "reps": 10
+                    },
+                    {
+                        "set": 2,
+                        "reps": 10
+                    },
+                    {
+                        "set": 3,
+                        "reps": 10
+                    }
+                ],
+                "weight": "9.5"
+            }
+        ]
+    },
+    {
+        "date": "2025-12-16",
+        "exercises": [
+            {
+                "name": "Rotating Biceps Curl",
+                "sets": [
+                    {
+                        "set": 1,
+                        "reps": 10
+                    },
+                    {
+                        "set": 2,
+                        "reps": 10
+                    },
+                    {
+                        "set": 3,
+                        "reps": 10
+                    }
+                ],
+                "weight": "9.5"
+            }
+        ]
+    },
+    {
+        "date": "2025-12-22",
+        "exercises": [
+            {
+                "name": "Dynamique Crunch",
+                "sets": [
+                    {
+                        "set": 1,
+                        "reps": 15
+                    },
+                    {
+                        "set": 2,
+                        "reps": 20
+                    },
+                    {
+                        "set": 3,
+                        "reps": 20
+                    }
+                ],
+                "weight": null
+            },
+            {
+                "name": "Dumbbell Triceps Kickbacks",
+                "sets": [
+                    {
+                        "set": 1,
+                        "reps": 15
+                    },
+                    {
+                        "set": 2,
+                        "reps": 15
+                    },
+                    {
+                        "set": 3,
+                        "reps": 15
+                    }
+                ],
+                "weight": "9.5"
+            },
+            {
+                "name": "Ab Wheel Rollout",
+                "sets": [
+                    {
+                        "set": 1,
+                        "reps": 10
+                    },
+                    {
+                        "set": 2,
+                        "reps": 10
+                    }
+                ],
+                "weight": null
+            },
+            {
+                "name": "Kettlebell Goblet Squat",
+                "sets": [
+                    {
+                        "set": 1,
+                        "reps": 15
+                    },
+                    {
+                        "set": 2,
+                        "reps": 15
+                    }
+                ],
+                "weight": "10"
+            },
+            {
+                "name": "Dumbbell Lateral Raise",
+                "sets": [
+                    {
+                        "set": 1,
+                        "reps": 12
+                    },
+                    {
+                        "set": 2,
+                        "reps": 12
+                    },
+                    {
+                        "set": 3,
+                        "reps": 12
+                    },
+                    {
+                        "set": 4,
+                        "reps": 12
+                    }
+                ],
+                "weight": "9.5"
+            },
+            {
+                "name": "Kettlebell Overhead Triceps Extension",
+                "sets": [
+                    {
+                        "set": 1,
+                        "reps": 12
+                    },
+                    {
+                        "set": 2,
+                        "reps": 12
+                    },
+                    {
+                        "set": 3,
+                        "reps": 12
+                    },
+                    {
+                        "set": 4,
+                        "reps": 12
+                    }
+                ],
+                "weight": "10"
+            },
+            {
+                "name": "Rotating Biceps Curl",
+                "sets": [
+                    {
+                        "set": 1,
+                        "reps": 10
+                    },
+                    {
+                        "set": 2,
+                        "reps": 20
+                    },
+                    {
+                        "set": 3,
+                        "reps": 20
+                    }
+                ],
+                "weight": "9.5"
+            }
+        ]
+    },
+    {
+        "date": "2025-12-23",
+        "exercises": [
+            {
+                "name": "Kettlebell Goblet Squat",
+                "sets": [
+                    {
+                        "set": 1,
+                        "reps": 15
+                    },
+                    {
+                        "set": 2,
+                        "reps": 15
+                    },
+                    {
+                        "set": 3,
+                        "reps": 15
+                    }
+                ],
+                "weight": "10"
+            },
+            {
+                "name": "Barbell RDL",
+                "sets": [
+                    {
+                        "set": 1,
+                        "reps": 10
+                    },
+                    {
+                        "set": 2,
+                        "reps": 16
+                    },
+                    {
+                        "set": 3,
+                        "reps": 16
+                    }
+                ],
+                "weight": "30"
+            },
+            {
+                "name": "Kettlebell Swings",
+                "sets": [
+                    {
+                        "set": 1,
+                        "reps": 20
+                    },
+                    {
+                        "set": 2,
+                        "reps": 20
+                    },
+                    {
+                        "set": 3,
+                        "reps": 20
+                    }
+                ],
+                "weight": "10"
+            },
+            {
+                "name": "Bodyweight Lunges",
+                "sets": [
+                    {
+                        "set": 1,
+                        "reps": 15
+                    },
+                    {
+                        "set": 2,
+                        "reps": 17
+                    },
+                    {
+                        "set": 3,
+                        "reps": 18
+                    }
+                ],
+                "weight": null
+            },
+            {
+                "name": "Kettlebell Forward Lunges",
+                "sets": [
+                    {
+                        "set": 1,
+                        "reps": 15
+                    },
+                    {
+                        "set": 2,
+                        "reps": 14
+                    },
+                    {
+                        "set": 3,
+                        "reps": 16
+                    }
+                ],
+                "weight": "10"
+            },
+            {
+                "name": "Dumbbell Lateral Raise",
+                "sets": [
+                    {
+                        "set": 1,
+                        "reps": 12
+                    },
+                    {
+                        "set": 2,
+                        "reps": 12
+                    },
+                    {
+                        "set": 3,
+                        "reps": 12
+                    },
+                    {
+                        "set": 4,
+                        "reps": 12
+                    }
+                ],
+                "weight": "9.5"
+            },
+            {
+                "name": "Cycling",
+                "sets": [
+                    {
+                        "set": 1,
+                        "reps": 70
+                    },
+                    {
+                        "set": 2,
+                        "reps": 75
+                    },
+                    {
+                        "set": 3,
+                        "reps": 80
+                    }
+                ],
+                "weight": null
+            },
+            {
+                "name": "Plank",
+                "sets": [
+                    {
+                        "set": 1,
+                        "reps": 60
+                    },
+                    {
+                        "set": 2,
+                        "reps": 60
+                    },
+                    {
+                        "set": 3,
+                        "reps": 60
+                    }
+                ],
+                "weight": null
+            }
+        ]
+    },
+    {
+        "date": "2026-01-22",
+        "exercises": [
+            {
+                "name": "Barbell Row",
+                "sets": [
+                    {
+                        "set": 1,
+                        "reps": 10
+                    },
+                    {
+                        "set": 2,
+                        "reps": 10
+                    },
+                    {
+                        "set": 3,
+                        "reps": 10
+                    }
+                ],
+                "weight": "30"
+            },
+            {
+                "name": "Dumbbell  Single-Arm Row-Right",
+                "sets": [
+                    {
+                        "set": 1,
+                        "reps": 10
+                    },
+                    {
+                        "set": 2,
+                        "reps": 10
+                    },
+                    {
+                        "set": 3,
+                        "reps": 10
+                    }
+                ],
+                "weight": "9.5"
+            },
+            {
+                "name": "Dumbbell  Single-Arm Row-Left",
+                "sets": [
+                    {
+                        "set": 1,
+                        "reps": 10
+                    },
+                    {
+                        "set": 2,
+                        "reps": 10
+                    },
+                    {
+                        "set": 3,
+                        "reps": 10
+                    }
+                ],
+                "weight": "9.5"
+            },
+            {
+                "name": "Kettlebell High Pull",
+                "sets": [
+                    {
+                        "set": 1,
+                        "reps": 10
+                    },
+                    {
+                        "set": 2,
+                        "reps": 10
+                    },
+                    {
+                        "set": 3,
+                        "reps": 12
+                    }
+                ],
+                "weight": "10"
+            },
+            {
+                "name": "Ab Wheel Rollout",
+                "sets": [
+                    {
+                        "set": 1,
+                        "reps": 10
+                    },
+                    {
+                        "set": 2,
+                        "reps": 10
+                    },
+                    {
+                        "set": 3,
+                        "reps": 12
+                    }
+                ],
+                "weight": null
+            },
+            {
+                "name": "Barbell Bicep Curl",
+                "sets": [
+                    {
+                        "set": 1,
+                        "reps": 10
+                    },
+                    {
+                        "set": 2,
+                        "reps": 4
+                    },
+                    {
+                        "set": 3,
+                        "reps": 5
+                    }
+                ],
+                "weight": "9.5"
+            },
+            {
+                "name": "Dumbbell Shrug",
+                "sets": [
+                    {
+                        "set": 1,
+                        "reps": 10
+                    },
+                    {
+                        "set": 2,
+                        "reps": 15
+                    },
+                    {
+                        "set": 3,
+                        "reps": 10
+                    }
+                ],
+                "weight": "9.5"
+            }
+        ]
+    },
+    {
+        "date": "2026-01-23",
+        "exercises": [
+            {
+                "name": "Barbell Thrusters",
+                "sets": [
+                    {
+                        "set": 1,
+                        "reps": 4
+                    },
+                    {
+                        "set": 2,
+                        "reps": 5
+                    },
+                    {
+                        "set": 3,
+                        "reps": 4
+                    }
+                ],
+                "weight": "30",
+                "muscle": "Quads / Shoulders"
+            },
+            {
+                "name": "Dumbbell Step-Ups",
+                "sets": [
+                    {
+                        "set": 1,
+                        "reps": 10
+                    },
+                    {
+                        "set": 2,
+                        "reps": 10
+                    },
+                    {
+                        "set": 3,
+                        "reps": 10
+                    }
+                ],
+                "weight": "29.5",
+                "muscle": "Quads / Glutes"
+            },
+            {
+                "name": "Kettlebell Halos",
+                "sets": [
+                    {
+                        "set": 1,
+                        "reps": 10
+                    },
+                    {
+                        "set": 2,
+                        "reps": 10
+                    },
+                    {
+                        "set": 3,
+                        "reps": 10
+                    }
+                ],
+                "weight": "10",
+                "muscle": "Shoulders / Core"
+            },
+            {
+                "name": "Push-Ups",
+                "sets": [
+                    {
+                        "set": 1,
+                        "reps": 16
+                    },
+                    {
+                        "set": 2,
+                        "reps": 16
+                    },
+                    {
+                        "set": 3,
+                        "reps": 7
+                    }
+                ],
+                "weight": null,
+                "muscle": "Chest / Shoulders"
+            },
+            {
+                "name": "Dumbbell Squat Jumps",
+                "sets": [
+                    {
+                        "set": 1,
+                        "reps": 10
+                    },
+                    {
+                        "set": 2,
+                        "reps": 15
+                    },
+                    {
+                        "set": 3,
+                        "reps": 15
+                    }
+                ],
+                "weight": "10",
+                "muscle": "Quads / Calves"
+            },
+            {
+                "name": "Kettlebell Side Swings",
+                "sets": [
+                    {
+                        "set": 1,
+                        "reps": 10
+                    },
+                    {
+                        "set": 2,
+                        "reps": 10
+                    },
+                    {
+                        "set": 3,
+                        "reps": 10
+                    }
+                ],
+                "weight": null,
+                "muscle": "Core / Shoulders"
+            },
+            {
+                "name": "Plank",
+                "sets": [
+                    {
+                        "set": 1,
+                        "reps": 60
+                    },
+                    {
+                        "set": 2,
+                        "reps": 60
+                    },
+                    {
+                        "set": 3,
+                        "reps": 60
+                    }
+                ],
+                "weight": null,
+                "muscle": "Core / Stabilizer"
+            }
+        ]
+    }
+]
