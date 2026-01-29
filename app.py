@@ -853,9 +853,9 @@ if menu == "Researcher Profile":
     with col1:
         st.image("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg", caption="Dr. Jane Doe")
     with col2:
-        st.write("**Field:** Astrophysics")
-        st.write("**Institution:** University of Science")
-        st.write("**Bio:** Specializing in stellar evolution and data-driven physical models.")
+        st.write("**Field:** Mathematics & Statistics")
+        st.write("**Institution:** University of Venda")
+        st.write("**Bio:** Specializing in data science, data-driven mathematical models & data storytelling.")
 
 elif menu == "STEM Data Explorer":
     st.title("STEM Data Explorer")
@@ -929,6 +929,7 @@ elif menu == "Contact":
     st.header("Contact")
     st.write("Email: ravele95@gmail.com")
     st.write("Contact No: 060 924 9459")
+
 
 
 
