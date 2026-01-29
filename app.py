@@ -6,6 +6,8 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import warnings
 
+null = None
+
 # --- 1. CONFIGURATION & STYLE ---
 st.set_page_config(page_title="Researcher Portfolio & Fitness", layout="wide")
 warnings.filterwarnings('ignore')
@@ -899,5 +901,6 @@ elif menu == "Fitness Tracker":
 elif menu == "Contact":
     st.header("Contact")
     st.write("Email: jane.doe@science.edu")
+
 
 
