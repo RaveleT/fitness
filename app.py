@@ -851,7 +851,7 @@ if menu == "Researcher Profile":
     st.title("Researcher Profile")
     col1, col2 = st.columns([1, 2])
     with col1:
-        st.image("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg", caption="Dr. Jane Doe")
+        st.image("https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg", caption="Mr. Thendo Ravele")
     with col2:
         st.write("**Field:** Mathematics & Statistics")
         st.write("**Institution:** University of Venda")
@@ -929,6 +929,7 @@ elif menu == "Contact":
     st.header("Contact")
     st.write("Email: ravele95@gmail.com")
     st.write("Contact No: 060 924 9459")
+
 
 
 
