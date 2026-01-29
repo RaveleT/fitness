@@ -927,7 +927,9 @@ elif menu == "Fitness Tracker":
 
 elif menu == "Contact":
     st.header("Contact")
-    st.write("Email: jane.doe@science.edu")
+    st.write("Email: ravele95@gmail.com")
+    st.write("Contact No: 060 924 9459")
+
 
 
 
