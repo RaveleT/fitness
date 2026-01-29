@@ -43,6 +43,23 @@ def categorize_fallback(name):
         if any(word in name for word in keywords): return category
     return 'Other'
 
+def clean_weight_robust(weight_val):
+    """Safely converts weight strings/objects to float."""
+    if weight_val is None:
+        return 0.0
+    try:
+        # Convert to string and handle European decimal commas
+        w_str = str(weight_val).replace(',', '.').strip()
+        
+        # If it's a range (e.g., "10-12"), take the average or the first number
+        if '-' in w_str:
+            parts = w_str.split('-')
+            return (float(parts[0]) + float(parts[1])) / 2
+            
+        return float(w_str)
+    except (ValueError, TypeError):
+        return 0.0
+
 def process_workout_data(raw_data):
     rows = []
     for workout in raw_data:
@@ -50,7 +67,10 @@ def process_workout_data(raw_data):
         for ex in workout.get('exercises', []):
             name = ex.get('name')
             cat = ex.get('muscle') if ex.get('muscle') else categorize_fallback(name)
-            weight = float(str(ex.get('weight', 0)).replace(',', '.'))
+            
+            # Use the robust cleaner here to prevent the ValueError
+            weight = clean_weight_robust(ex.get('weight'))
+            
             for s in ex.get('sets', []):
                 reps = s.get('reps', 0)
                 rows.append({
@@ -58,6 +78,7 @@ def process_workout_data(raw_data):
                     'Exercise': name,
                     'Category': cat,
                     'Volume': reps * weight,
+                    'Weight': weight,
                     'Reps': reps
                 })
     return pd.DataFrame(rows)
@@ -122,3 +143,4 @@ elif menu == "Fitness Tracker":
 elif menu == "Contact":
     st.header("Contact")
     st.write("Email: jane.doe@science.edu")
+
