@@ -196,18 +196,23 @@ if check_password():
     elif menu == "Body Analytics":
         st.markdown("## ⚖️ Body Composition Tracking")
         df_body = load_body_data()
+
         if df_body.empty:
-            st.warning("No `body_data.csv` found. Upload it in Data Management.")
+            st.warning("No `body_data.csv` found. Upload one in Data Management or create one.")
         else:
+            # --- 1. Top Level Metrics ---
             latest = df_body.iloc[-1]
             prev = df_body.iloc[-2] if len(df_body) > 1 else latest
+            
             c1, c2, c3, c4 = st.columns(4)
             c1.metric("Weight", f"{latest['Weight (kg)']}kg", f"{latest['Weight (kg)'] - prev['Weight (kg)']:+.1f}")
             c2.metric("Muscle", f"{latest['Skeletal Muscle (kg)']}kg", f"{latest['Skeletal Muscle (kg)'] - prev['Skeletal Muscle (kg)']:+.1f}")
             c3.metric("Fat %", f"{latest['Body Fat (%)']}%", f"{latest['Body Fat (%)'] - prev['Body Fat (%)']:+.1f}%", delta_color="inverse")
             c4.metric("BMI", f"{latest['BMI']}", f"{latest['BMI'] - prev['BMI']:+.1f}", delta_color="inverse")
-            
+
             st.divider()
+
+            # --- 2. Visual Charts ---
             col_l, col_r = st.columns(2)
             with col_l:
                 st.markdown("### 📈 Weight vs Muscle")
@@ -217,6 +222,29 @@ if check_password():
                 st.markdown("### 💧 Comp Breakdown")
                 fig_c = px.area(df_body, x='Date', y=['Body Water (kg)', 'Fat Mass (kg)'], template="plotly_dark", color_discrete_sequence=['#00d2ff', '#FF4F0F'])
                 st.plotly_chart(fig_c, use_container_width=True)
+
+            st.divider()
+
+            # --- 3. THE CSV EDITOR (Spreadsheet Mode) ---
+            st.markdown("### 📝 Edit Body Data")
+            st.info("Directly edit cells below or scroll to the bottom to add a new row. Click 'Confirm Changes' to save to CSV.")
+            
+            # Use data_editor to allow live editing
+            edited_df = st.data_editor(
+                df_body, 
+                num_rows="dynamic",  # Allows you to add/delete rows
+                use_container_width=True,
+                key="body_editor"
+            )
+
+            if st.button("💾 Confirm Changes & Save to CSV"):
+                try:
+                    edited_df.to_csv("body_data.csv", index=False)
+                    st.success("CSV updated successfully! Reloading...")
+                    st.cache_data.clear() # Clear cache so charts update
+                    st.rerun()
+                except Exception as e:
+                    st.error(f"Error saving file: {e}")
 
     # --- LOG IMPORTER ---
     elif menu == "Log Importer":
@@ -272,4 +300,5 @@ if check_password():
             
         st.divider()
         st.download_button("📤 Export Workout State", data=json.dumps(st.session_state['workout_history'], indent=4), file_name="fitness_os.json")
+
 
