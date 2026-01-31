@@ -250,7 +250,7 @@ if check_password():
                 st.session_state['workout_history'] = []
                 st.rerun()
         with c2:
-            if st.button("🔄 Reload From Secrets"):
+            if st.button("🔄 Reload Demo Data"):
                 st.session_state['workout_history'] = load_initial_data()
                 st.rerun()
         
@@ -272,3 +272,4 @@ if check_password():
             
         st.divider()
         st.download_button("📤 Export Workout State", data=json.dumps(st.session_state['workout_history'], indent=4), file_name="fitness_os.json")
+
